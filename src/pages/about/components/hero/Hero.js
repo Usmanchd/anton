@@ -44,20 +44,74 @@ const Hero = () => {
 
   return (
     <>
-      <Image
-        handleMouse={(leave) => handleMouse('boy', leave)}
-        url={`${process.env.PUBLIC_URL}/assets/images/boy${
-          mouseOver[0] ? 1 : boyCount
-        }.png`}
-        pos={{ right: `${pos}%` }}
-      />
-      <Image
-        handleMouse={(leave) => handleMouse('girl', leave)}
-        url={`${process.env.PUBLIC_URL}/assets/images/girl${
-          mouseOver[1] ? 1 : girlCount
-        }.png`}
-        pos={{ left: `${pos + 10}%` }}
-      />
+      <>
+        <Image
+          handleMouse={(leave) => handleMouse('boy', leave)}
+          url={`${process.env.PUBLIC_URL}/assets/images/boy${1}.png`}
+          pos={{
+            right: `${pos}%`,
+            opacity: mouseOver[0] ? 1 : 0,
+          }}
+        />
+        <Image
+          handleMouse={(leave) => handleMouse('boy', leave)}
+          url={`${process.env.PUBLIC_URL}/assets/images/boy${2}.png`}
+          pos={{
+            right: `${pos}%`,
+            opacity: boyCount === 2 && !mouseOver[0] ? 1 : 0,
+          }}
+        />
+        <Image
+          handleMouse={(leave) => handleMouse('boy', leave)}
+          url={`${process.env.PUBLIC_URL}/assets/images/boy${3}.png`}
+          pos={{
+            right: `${pos}%`,
+            opacity: boyCount === 3 && !mouseOver[0] ? 1 : 0,
+          }}
+        />
+        <Image
+          handleMouse={(leave) => handleMouse('boy', leave)}
+          url={`${process.env.PUBLIC_URL}/assets/images/boy${4}.png`}
+          pos={{
+            right: `${pos}%`,
+            opacity: boyCount === 4 && !mouseOver[0] ? 1 : 0,
+          }}
+        />
+      </>
+      <>
+        <Image
+          handleMouse={(leave) => handleMouse('girl', leave)}
+          url={`${process.env.PUBLIC_URL}/assets/images/girl${1}.png`}
+          pos={{
+            left: `${pos + 10}%`,
+            opacity: mouseOver[1] ? 1 : 0,
+          }}
+        />
+        <Image
+          handleMouse={(leave) => handleMouse('girl', leave)}
+          url={`${process.env.PUBLIC_URL}/assets/images/girl${2}.png`}
+          pos={{
+            left: `${pos + 10}%`,
+            opacity: girlCount === 2 && !mouseOver[1] ? 1 : 0,
+          }}
+        />
+        <Image
+          handleMouse={(leave) => handleMouse('girl', leave)}
+          url={`${process.env.PUBLIC_URL}/assets/images/girl${3}.png`}
+          pos={{
+            left: `${pos + 10}%`,
+            opacity: girlCount === 3 && !mouseOver[1] ? 1 : 0,
+          }}
+        />
+        <Image
+          handleMouse={(leave) => handleMouse('girl', leave)}
+          url={`${process.env.PUBLIC_URL}/assets/images/girl${4}.png`}
+          pos={{
+            left: `${pos + 10}%`,
+            opacity: girlCount === 4 && !mouseOver[1] ? 1 : 0,
+          }}
+        />
+      </>
       <div
         onClick={arrowClicked}
         className={`${style.arrContainer} ${!showArrow ? style.hide : ''}`}

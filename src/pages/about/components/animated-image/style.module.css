@@ -10,7 +10,9 @@
   height: 80%;
   transform-origin: 100% 100%;
   transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 0.4s ease;
 }
+
 .personChanger {
   position: absolute;
   top: 5%;
