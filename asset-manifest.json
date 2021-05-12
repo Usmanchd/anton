@@ -1,20 +1,28 @@
 {
   "files": {
     "main.css": "/anton/static/css/main.b2ad0641.chunk.css",
-    "main.js": "/anton/static/js/main.01d9e36d.chunk.js",
-    "main.js.map": "/anton/static/js/main.01d9e36d.chunk.js.map",
+    "main.js": "/anton/static/js/main.7174aeda.chunk.js",
+    "main.js.map": "/anton/static/js/main.7174aeda.chunk.js.map",
     "runtime-main.js": "/anton/static/js/runtime-main.7c22c83d.js",
     "runtime-main.js.map": "/anton/static/js/runtime-main.7c22c83d.js.map",
     "static/js/2.39fcc379.chunk.js": "/anton/static/js/2.39fcc379.chunk.js",
     "static/js/2.39fcc379.chunk.js.map": "/anton/static/js/2.39fcc379.chunk.js.map",
     "index.html": "/anton/index.html",
     "static/css/main.b2ad0641.chunk.css.map": "/anton/static/css/main.b2ad0641.chunk.css.map",
-    "static/js/2.39fcc379.chunk.js.LICENSE.txt": "/anton/static/js/2.39fcc379.chunk.js.LICENSE.txt"
+    "static/js/2.39fcc379.chunk.js.LICENSE.txt": "/anton/static/js/2.39fcc379.chunk.js.LICENSE.txt",
+    "static/media/boy1.5fe0464f.png": "/anton/static/media/boy1.5fe0464f.png",
+    "static/media/boy2.0bc830ad.png": "/anton/static/media/boy2.0bc830ad.png",
+    "static/media/boy3.263ca2d8.png": "/anton/static/media/boy3.263ca2d8.png",
+    "static/media/boy4.091fa79a.png": "/anton/static/media/boy4.091fa79a.png",
+    "static/media/girl1.4d663445.png": "/anton/static/media/girl1.4d663445.png",
+    "static/media/girl2.df593d41.png": "/anton/static/media/girl2.df593d41.png",
+    "static/media/girl3.ff48675b.png": "/anton/static/media/girl3.ff48675b.png",
+    "static/media/girl4.8a36058e.png": "/anton/static/media/girl4.8a36058e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7c22c83d.js",
     "static/js/2.39fcc379.chunk.js",
     "static/css/main.b2ad0641.chunk.css",
-    "static/js/main.01d9e36d.chunk.js"
+    "static/js/main.7174aeda.chunk.js"
   ]
 }
