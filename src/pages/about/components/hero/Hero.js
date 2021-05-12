@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Image from '../animated-image/Image';
 import Arrow from './Arrow';
 import style from './style.module.css';
+
 const Hero = () => {
   const [boyCount, setBoyCount] = useState(1);
   const [girlCount, setGirlCount] = useState(1);
@@ -45,12 +46,16 @@ const Hero = () => {
     <>
       <Image
         handleMouse={(leave) => handleMouse('boy', leave)}
-        url={`./assets/images/boy${mouseOver[0] ? 1 : boyCount}.png`}
+        url={`${process.env.PUBLIC_URL}/assets/images/boy${
+          mouseOver[0] ? 1 : boyCount
+        }.png`}
         pos={{ right: `${pos}%` }}
       />
       <Image
         handleMouse={(leave) => handleMouse('girl', leave)}
-        url={`./assets/images/girl${mouseOver[1] ? 1 : girlCount}.png`}
+        url={`${process.env.PUBLIC_URL}/assets/images/girl${
+          mouseOver[1] ? 1 : girlCount
+        }.png`}
         pos={{ left: `${pos + 10}%` }}
       />
       <div
